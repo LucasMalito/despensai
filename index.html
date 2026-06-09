@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DespensAI — Organize tudo. Compre no automático.</title>
+<meta name="description" content="DespensAI é o app que organiza seus estoques de casa (comida, pet, farmácia, adega e mais), cuida da sua dieta e monta seu carrinho de compras no automático — sempre no melhor lugar.">
+<link rel="icon" href="logo.png">
+<style>
+  :root{--g:#4caf50;--g2:#2e7d32;--bg:#f4f9f4;--ink:#1d2a1d;--mut:#5d6b5d;--card:#fff;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+  header{text-align:center;padding:56px 0 30px}
+  header img{width:120px;height:120px;border-radius:28px;box-shadow:0 10px 30px rgba(46,125,50,.25)}
+  h1{font-size:2.5rem;margin:22px 0 10px;letter-spacing:-.5px}
+  .tag{font-size:1.25rem;color:var(--g2);font-weight:600}
+  .sub{font-size:1.05rem;color:var(--mut);max-width:620px;margin:16px auto 0}
+  .cta{display:inline-block;margin-top:26px;background:var(--g);color:#fff;padding:15px 34px;border-radius:40px;font-weight:700;font-size:1.05rem;text-decoration:none;box-shadow:0 8px 20px rgba(76,175,80,.35)}
+  .badge{display:inline-block;margin-top:14px;font-size:.85rem;color:var(--mut);background:#e8f5e9;padding:5px 14px;border-radius:20px}
+  section{padding:42px 0}
+  h2{font-size:1.7rem;text-align:center;margin-bottom:8px}
+  .lead{text-align:center;color:var(--mut);margin-bottom:30px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .card{background:var(--card);border-radius:18px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,.05)}
+  .card .ic{font-size:2rem}
+  .card h3{margin:10px 0 6px;font-size:1.15rem}
+  .card p{color:var(--mut);font-size:.95rem}
+  .stocks{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:8px}
+  .chip{background:#fff;border:1px solid #d7e7d7;border-radius:30px;padding:8px 16px;font-weight:600;font-size:.92rem}
+  .rec{background:#fff;border-radius:18px;padding:26px;box-shadow:0 4px 16px rgba(0,0,0,.05)}
+  .rec .row{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid #eef3ee}
+  .rec .row:last-child{border:0}
+  .rec .e{font-size:1.6rem}
+  .rec .nm{font-weight:600}
+  .rec .mut{color:var(--mut);font-size:.88rem}
+  .rec .buy{margin-left:auto;background:#ff9900;color:#fff;text-decoration:none;padding:9px 16px;border-radius:10px;font-weight:700;font-size:.9rem;white-space:nowrap}
+  .note{text-align:center;color:var(--mut);font-size:.85rem;margin-top:16px}
+  footer{text-align:center;padding:40px 0;color:var(--mut);font-size:.88rem;border-top:1px solid #e3ede3;margin-top:20px}
+  footer b{color:var(--ink)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="logo.png" alt="DespensAI">
+    <h1>DespensAI</h1>
+    <div class="tag">Organize tudo. Compre no automático.</div>
+    <p class="sub">O app que cuida dos seus estoques de casa, da sua dieta e das suas receitas — e quando algo está acabando, já monta seu carrinho de compras no melhor lugar.</p>
+    <a class="cta" href="#listadeespera">Entrar na lista de espera</a>
+    <div class="badge">🥦 Em lançamento · grátis pra começar</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Tudo organizado por estoques</h2>
+    <p class="lead">Um app pra cada parte da sua vida — todos no mesmo lugar.</p>
+    <div class="stocks">
+      <span class="chip">🏠 Casa</span><span class="chip">🐶 Pet</span><span class="chip">💊 Farmácia</span>
+      <span class="chip">🍷 Adega &amp; Bar</span><span class="chip">🧴 Limpeza</span><span class="chip">🍼 Bebê</span>
+      <span class="chip">🖇️ Escritório</span><span class="chip">🛠️ Obra</span><span class="chip">🚗 Carro</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Como funciona</h2>
+    <p class="lead">Você consome, a IA cuida do resto.</p>
+    <div class="grid">
+      <div class="card"><div class="ic">📥</div><h3>Dá entrada fácil</h3><p>Foto da nota fiscal, código de barras ou foto dos alimentos — a IA cadastra tudo no seu estoque.</p></div>
+      <div class="card"><div class="ic">🍳</div><h3>Receita dá baixa</h3><p>Fez a receita, o app desconta os ingredientes do estoque e lança as calorias na sua dieta.</p></div>
+      <div class="card"><div class="ic">🥗</div><h3>Dieta integrada</h3><p>Acompanhe calorias, proteína e água. Comeu? O app conta — de casa ou na rua.</p></div>
+      <div class="card"><div class="ic">🛒</div><h3>Carrinho automático</h3><p>Acabando? A IA avisa e monta o carrinho comparando os melhores lugares pra comprar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Produtos recomendados pra você</h2>
+    <p class="lead">Quando falta algo no seu estoque, o DespensAI sugere e leva direto pro carrinho.</p>
+    <div class="rec">
+      <div class="row"><span class="e">⚖️</span><div><div class="nm">Balança de cozinha smart</div><div class="mut">Pesa e calcula a porção certinha</div></div><a class="buy" href="https://www.amazon.com.br/" rel="nofollow sponsored" target="_blank">Comprar</a></div>
+      <div class="row"><span class="e">🥡</span><div><div class="nm">Kit potes herméticos</div><div class="mut">Conserva e organiza a despensa</div></div><a class="buy" href="https://www.amazon.com.br/" rel="nofollow sponsored" target="_blank">Comprar</a></div>
+      <div class="row"><span class="e">🍽️</span><div><div class="nm">Comedouro automático pet</div><div class="mut">Libera a ração e dá baixa sozinho</div></div><a class="buy" href="https://www.amazon.com.br/" rel="nofollow sponsored" target="_blank">Comprar</a></div>
+      <div class="row"><span class="e">🌡️</span><div><div class="nm">Adega climatizada</div><div class="mut">Seus vinhos na temperatura certa</div></div><a class="buy" href="https://www.amazon.com.br/" rel="nofollow sponsored" target="_blank">Comprar</a></div>
+    </div>
+    <p class="note">Como Associados da Amazon, o DespensAI pode receber comissão por compras qualificadas feitas pelos links recomendados, sem custo extra pra você.</p>
+  </div>
+</section>
+
+<section id="listadeespera">
+  <div class="wrap" style="text-align:center">
+    <h2>Quer ser dos primeiros?</h2>
+    <p class="lead">O DespensAI está chegando. Garanta seu acesso antecipado.</p>
+    <a class="cta" href="mailto:contato@nexusorbital.com.br?subject=Quero%20o%20DespensAI">Quero acesso antecipado</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>🥦 <b>DespensAI</b> — um produto da <b>Nexus Orbital</b></p>
+    <p style="margin-top:6px">contato@nexusorbital.com.br · Santo André/SP</p>
+  </div>
+</footer>
+</body>
+</html>
